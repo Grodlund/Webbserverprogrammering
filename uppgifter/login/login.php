@@ -17,14 +17,17 @@
 
     </head>
 <body>
-     
-        <h3>Användarnamn:<h3/><input type="text">
+        <form action="submit.php" method="post">
         
-        <h3>Lösenord:<h3/><input type="password">
-            <br>
-        <input type="submit">
+            
+            <h3>Användarnamn:<h3/><input type="text" name="Användarnamn">
+            <h3>Lösenord:<h3/><input type="password"
+            name="Lösenord">
+<br>
+       
+            <input type="submit" name="submit">
         
-        
+        </form>
         
     
 

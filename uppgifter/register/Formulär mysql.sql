@@ -1,0 +1,1 @@
+create table users (id int(8) PRIMARY KEY AUTO_INCREMENT, username varchar(32) unique, name varchar(32), mail varchar(32) unique, date timestamp, password varchar(32));

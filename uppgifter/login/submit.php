@@ -13,7 +13,7 @@ $results = mysqli_query($dbc,$query);
 if(mysqli_fetch_array($results)){ 
     
     echo  "Successfully logged in!";
-    
+     
 }
 
 else{

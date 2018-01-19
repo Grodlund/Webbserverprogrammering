@@ -1,23 +1,37 @@
 <!DOCTYPE html>
 <html>
 
-  <img onmouseover="bild(this)"onmouseout="bild2(this)" border="0" src="bowiee.jpg" alt="Bowie picture" width="125" height="250"> </img>
+  
+
+
+<img id="demo" src="bowiee.jpg" alt="Bowie picture" width="125" height="250"> </img>
+
+<br>
+
+<button type="button" onclick="test()">Click Me!</button>
+
 
 
 <script>
-function bild(x) {
-    x.style.height = "500px";
-    x.style.width = "250px";
+
+function test(){
+    if(document.getElementById('demo').style.display == 'none'){
+        document.getElementById('demo').style.display='block';
+    }
+    else{
+        document.getElementById('demo').style.display='none';
+    }
+    
+    
+    
+    
+    
 }
 
-function bild2(x) {
-    x.style.height = "250";
-    x.style.width = "125px";
-}
+
+
+
 </script>
-
-
-
 
 
 

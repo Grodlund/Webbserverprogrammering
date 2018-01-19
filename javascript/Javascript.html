@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
 
-  <button type="button" onclick="alert('Hallå hej')">Click me!</button>
+  <img onmouseover="bild(this)"onmouseout="bild2(this)" border="0" src="bowiee.jpg" alt="Bowie picture" width="125" height="250"> </img>
 
 
+<script>
+function bild(x) {
+    x.style.height = "500px";
+    x.style.width = "250px";
+}
 
-
-
-
+function bild2(x) {
+    x.style.height = "250";
+    x.style.width = "125px";
+}
+</script>
 
 
 

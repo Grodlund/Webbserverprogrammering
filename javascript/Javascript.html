@@ -1,17 +1,35 @@
 <!DOCTYPE html>
 <html>
-
-
-<button type="button" onclick="myFunction()">Set background color</button>
-
+    
+    
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script>
-
-function myFunction() {
-    document.body.style.backgroundColor = "red";
-}
-
+$(document).ready(function(){
+    $("button").click(function(){
+        $("div").remove();
+    });
+});
 </script>
 
+</head>
+<body>
+
+    
+<p>Hej på dig!</p>
     
     
+    <div class="test">
+        
+        <img  src="bowiee.jpg" alt="Bowie picture" width="125" height="250"> </img>
+    
+    
+<br>
+
+<button>Ta bort</button>
+
+    </div>
+    
+</body>
+
 </html>

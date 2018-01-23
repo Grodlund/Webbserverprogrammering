@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html>
     
+    <head>
     
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-    $("button").click(function(){
-        $("div").remove();
-    });
-});
-</script>
+        <style>
+            div{
+                width: 50px;
+                height: 50px;
+                border: 1px solid black;
+                background-color: white;
+            }
 
-</head>
-<body>
+        </style>
 
-    
-<p>Hej på dig!</p>
-    
-    
-    <div class="test">
+        <script>
+
+            function chcolor(){
+                
+                
+               if(document.getElementById("div1").style.backgroundColor=="blue"){
+                    document.getElementById("div1").style.backgroundColor="red";
+                }
+                
+                else if(document.getElementById("div1").style.backgroundColor=="red"){
+                    document.getElementById("div1").style.backgroundColor="green";
+                }
+                else {
+                    document.getElementById("div1").style.backgroundColor="blue";
+                }
+                
+            }
         
-        <img  src="bowiee.jpg" alt="Bowie picture" width="125" height="250"> </img>
-    
-    
-<br>
+        </script>
+        
+    </head>
 
-<button>Ta bort</button>
-
-    </div>
+    <body>
+        
+        <div id="div1" onmousedown="chcolor()"></div>
     
-</body>
+    </body>
 
 </html>
